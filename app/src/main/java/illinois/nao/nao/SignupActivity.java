@@ -51,7 +51,6 @@ public class SignupActivity extends AppCompatActivity {
     }
 
     public void signUp(View v) {
-
         if (password.getText().toString().equals(confirmPassword.getText().toString())) {
             Log.d(TAG, "suh dude");
             mAuth.createUserWithEmailAndPassword(email.getText().toString(), password.getText().toString())
